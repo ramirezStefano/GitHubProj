@@ -62,9 +62,7 @@ In the pull request tab we select the main repository and ask to compare it to t
   
 ## Merge to Main
 
-If we are happy we follow though with the pull request to merge and follow the wizard until the end. If one is not the owner of the repo one can just request not merge unless given privilages.
-
-The owner can then review the pull request and follow though the wizard until finishing with a hopefully sucessfull merge.
+To merge things into main we need a pull request **(PR)**. If working solo, you can go ahead and merge the PR following the wizard; if working within a team, ask a teammate to review the PR and it will get merged after the PR gets approved.
 
 ## Cleanup
 
