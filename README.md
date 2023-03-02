@@ -6,7 +6,9 @@ From an existing project, we can fork from the browser GUI to usually by default
 
 Once the project has been forked it can be worked locally without touching the Main in the web (github).
 
-WIth the forked project we continue to create a Branch with the appropiate name on what we are working, e.g. exNUpdate, Function modiule foo, work on file x...
+
+## New Branch
+With the forked project we continue to create a Branch with the appropiate name on what we are working, e.g. exNUpdate, Function modiule foo, work on file x...
 This is done with the following command
 
 git branch foo
@@ -23,6 +25,8 @@ This two lines can be switchd to just:
 
 git checkout -b foo
 
+## Work Upload
+
 When the desired work has been completed and we want to 'save' or upload the new work done to the web as a seperate branch from main.
 We do this with the the following piped commands:
 
@@ -34,11 +38,15 @@ We then 'push' this to the web with the following command:
 
 git push
 
+## Check Upload  
+
 At this point if we check and refresh the git web app we should be able to see the main and the foo branch in the branches sub menu.
 
 We continue to add and commit and push until we are happy for peer review at which point we want to ask from a merge request towards main. 
 
 This part is done in the web GUI. In the pull request tab we select the main repository and we compare it to the commited branch.
+  
+## Merge and Cleanup
 
 If we are happy we follow though with the merge and follow the wizard until the end.
 
@@ -55,4 +63,10 @@ prune
 this command was made with:
 
 git branch | grep -v "main" | xargs git branch -D
+  
+we then update our machine loaclly with the following command:
+  
+git pull
+  
+And we are done! Both the web and the machine locally are synched and updated with the most fresh main project ;)
 
