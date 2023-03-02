@@ -11,32 +11,42 @@ Once the project has been forked it can be worked locally without touching the M
 With the forked project we continue to create a Branch with the appropiate name on what we are working, e.g. exNUpdate, Function modiule foo, work on file x...
 This is done with the following command
 
+```shell
 git branch foo
+```
 
 Where foo will be the new branch.
 
 Once the branch is made we can switch to it with the following command:
 
+```shell
 git switch foo
+```
 
 foo is the new branch just made.
 
 This two lines can be switchd to just:
 
+```shell
 git checkout -b foo
+```
 
 ## Work Upload
 
 When the desired work has been completed and we want to 'save' or upload the new work done to the web as a seperate branch from main.
 We do this with the the following piped commands:
 
+```shell
 git add . && git commit -m "<useful message>"
+```
 
 This adds the saved local files to the current working repository branch foo.
 
 We then 'push' this to the web with the following command:
 
+```shell
 git push
+```
 
 ## Check Upload  
 
@@ -54,19 +64,25 @@ Towards the end of the GUI Wizard there will be the option to delete the branch,
 
 OK, so the Main in Github has all the new changes BUT out PC has an out of date main and the extra branch foo that we wont be using anymore. So we go back to th machine main
 
-git checkout main OR git switch main
+```shell git checkout main ``` OR ```shell git switch main```
 
 We can now delete the extra branches that are not main with the alias command:
 
+```shell
 prune
+```
 
 this command was made with:
 
+```shell
 git branch | grep -v "main" | xargs git branch -D
-  
+``` 
+
 we then update our machine loaclly with the following command:
-  
+
+```shell
 git pull
+```
   
 And we are done! Both the web and the machine locally are synched and updated with the most fresh main project ;)
 
