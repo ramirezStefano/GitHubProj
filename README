@@ -21,7 +21,7 @@ foo is the new branch just made.
 
 This two lines can be switchd to just:
 
-git checkout foo
+git checkout -b foo
 
 When the desired work has been completed and we want to 'save' or upload the new work done to the web as a seperate branch from main.
 We do this with the the following piped commands:
