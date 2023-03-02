@@ -1,8 +1,10 @@
+# GitHub Basic Use Guide Readme
+
 ## Aim
 This is a simple guide to GitHub use, some commands and the expected standards to use for upcoming projects.
 
 ## Workflow
-From an existing project e.g. (https://github.com/ramirezStefano/GitHubProj) , we can fork from the browser GUI to the default User dierctory e.g. ../ramirezstefano dir. OR a directory can be specified e.g. ../foo/bar/foo
+From an existing project e.g. (https://github.com/ramirezStefano/GitHubProj), we can fork from the browser GUI to the default User dierctory e.g. ../ramirezstefano dir. OR a directory can be specified e.g. ../foo/bar/foo
 
 Once the project has been forked it can be worked locally without touching the Main in the web (github). We want to create a branch for the work updates.
 
@@ -41,8 +43,8 @@ git add . && git commit -m "<useful message>"
 
 This adds the saved local files to the current working repository branch foo.
 
-We then 'push' this to the web with the following command:
-NOTE: the push is done from the current branch to push such branch e.g. git push from ./main != git push from ./foo 
+We then **'push'** this to the web with the following command:
+NOTE: the push is done from the current branch to push such branch e.g. git push from ./main not the same as git push from ./foo 
 
 ```shell
 git push
@@ -54,9 +56,9 @@ At this point if we check and refresh the GitHub repository e.g. (https://github
 
 We continue to add and commit and push until we are happy for peer review, at which point we want to ask from a merge request towards main to the owner of the repository. 
 
-This part is done in the web GUI. 
+***This part is done in the web GUI. ***
 
-In the pull request tab we select the main repository and ask to compare it to the commited working branch e.g. branch foo.
+In the pull request tab we select the main repository and ask to compare it to the commited working branch *e.g. branch foo.*
   
 ## Merge to Main
 
@@ -66,9 +68,9 @@ The owner can then review the pull request and follow though the wizard until fi
 
 ## Cleanup
 
-Towards the end of the GUI Wizard, right after merging there will be the option to delete the branch, we do this as to not jam up the branches sub tab and thus have a clean product and nicer presentation.
+Towards the end of the GUI Wizard, right after merging there will be the option to ***delete the branch***, we do this as to not jam up the branches sub tab and thus have a clean product and nicer presentation.
 
-OK, so the Main in Github has all the new changes BUT our machine has an out of date main (the one since we forked :disappointed_relieved: ) and the extra branch foo that we wont be using anymore.
+OK, so the Main in Github has all the new changes *BUT* our machine has an out of date main (the one since we forked :disappointed_relieved: ) and the extra branch foo that we wont be using anymore.
 
 So we go back to the main branch:
 
@@ -100,5 +102,7 @@ With only our old main in the local machine and all the work merged in the main 
 git pull
 ```
   
-And we are done! Both the web and the machine locally are synched right after running the command one would usually want to pull before any work is done to always start with the most recent reviewd version. :space_invader:
+And we are done!
+
+Both the web and the local machine main branches are synched right after running the command one would usually want to pull before any work is done to always start with the most recent reviewed version. :space_invader:
 
