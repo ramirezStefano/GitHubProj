@@ -26,7 +26,7 @@ git switch foo
 
 foo is the new branch just made.
 
-This two lines can be switchd to just:
+This two lines can be switched to just:
 
 ```shell
 git checkout -b foo
