@@ -4,12 +4,12 @@
 This is a simple guide to GitHub use, some commands and the expected standards to use for upcoming projects.
 
 ## Workflow
-From an existing project e.g. (https://github.com/ramirezStefano/GitHubProj), we can fork from the browser GUI to the default User dierctory e.g. ../ramirezstefano dir. OR a directory can be specified e.g. ../foo/bar/foo
+From an existing project e.g. (https://github.com/ramirezStefano/GitHubProj), we can fork from the browser GUI to the default User dierctory ***e.g. ../ramirezstefano dir***. OR a directory can be specified ***e.g. ../foo/bar/foo***
 
-Once the project has been forked it can be worked locally without touching the Main in the web (github). We want to create a branch for the work updates.
+Once the project has been forked it can be worked locally without touching the Main in the web (GitHub). We want to create a branch for the work updates.
 
 ## New Branch
-We continue to create a Branch with the appropiate name on what we are working, e.g. exNUpdate, Function module foo, work on file x...
+We continue to create a Branch with the appropiate name on what we are working, ***e.g. exNUpdate, Function module foo, work on file x, Bar_v2.0...***
 This is done with the following command
 
 ```shell
@@ -56,7 +56,7 @@ At this point if we check and refresh the GitHub repository e.g. (https://github
 
 We continue to add and commit and push until we are happy for peer review, at which point we want to ask from a merge request towards main to the owner of the repository. 
 
-***This part is done in the web GUI. ***
+***This part is done in the web GUI.***
 
 In the pull request tab we select the main repository and ask to compare it to the commited working branch *e.g. branch foo.*
   
