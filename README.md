@@ -1,14 +1,13 @@
 ## Aim:
 This is a simple guide to Github use and some commands and the expected standards to use for upcoming projects.
 
-## Workflow
-From an existing project, we can fork from the browser GUI to usually by default the User dierctory e.g. ../ramirezstefano dir.
+## Workflow:
+From an existing project e.g. (https://github.com/ramirezStefano/GitHubProj) , we can fork from the browser GUI to the default User dierctory e.g. ../ramirezstefano dir. OR a directory can be specified e.g. ../foo/bar/foo
 
-Once the project has been forked it can be worked locally without touching the Main in the web (github).
+Once the project has been forked it can be worked locally without touching the Main in the web (github). We want to create a branch for the work updates.
 
-
-## New Branch
-With the forked project we continue to create a Branch with the appropiate name on what we are working, e.g. exNUpdate, Function modiule foo, work on file x...
+## New Branch:
+We continue to create a Branch with the appropiate name on what we are working, e.g. exNUpdate, Function module foo, work on file x...
 This is done with the following command
 
 ```shell
@@ -34,7 +33,7 @@ git checkout -b foo
 ## Work Upload
 
 When the desired work has been completed and we want to 'save' or upload the new work done to the web as a seperate branch from main.
-We do this with the the following piped commands:
+We do this with the the following sequential commands simplified as such:
 
 ```shell
 git add . && git commit -m "<useful message>"
@@ -43,46 +42,63 @@ git add . && git commit -m "<useful message>"
 This adds the saved local files to the current working repository branch foo.
 
 We then 'push' this to the web with the following command:
+NOTE: the push is done from the current branch to push such branch e.g. git push from ./main != git push from ./foo 
 
 ```shell
 git push
 ```
 
-## Check Upload  
+## Check if Work is Uploaded
 
-At this point if we check and refresh the git web app we should be able to see the main and the foo branch in the branches sub menu.
+At this point if we check and refresh the GitHub repository e.g. (https://github.com/ramirezStefano/GitHubProj) we should be able to see the main branch and the foo branch in the branches sub menu.
 
-We continue to add and commit and push until we are happy for peer review at which point we want to ask from a merge request towards main. 
+We continue to add and commit and push until we are happy for peer review, at which point we want to ask from a merge request towards main to the owner of the repository. 
 
-This part is done in the web GUI. In the pull request tab we select the main repository and we compare it to the commited branch.
+This part is done in the web GUI. 
+
+In the pull request tab we select the main repository and ask to compare it to the commited working branch e.g. branch foo.
   
-## Merge and Cleanup
+## Merge to Main
 
-If we are happy we follow though with the merge and follow the wizard until the end.
+If we are happy we follow though with the pull request to merge and follow the wizard until the end. If one is not the owner of the repo one can just request not merge unless given privilages.
 
-Towards the end of the GUI Wizard there will be the option to delete the branch, we do this as to not jam up the branches sub tab and thus have a clean product.
+The owner can then review the pull request and follow though the wizard until finishing with a hopefully sucessfull merge.
 
-OK, so the Main in Github has all the new changes BUT out PC has an out of date main and the extra branch foo that we wont be using anymore. So we go back to th machine main
+## Cleanup
 
-```shell git checkout main ``` OR ```shell git switch main```
+Towards the end of the GUI Wizard, right after merging there will be the option to delete the branch, we do this as to not jam up the branches sub tab and thus have a clean product and nicer presentation.
 
-We can now delete the extra branches that are not main with the alias command:
+OK, so the Main in Github has all the new changes BUT our machine has an out of date main (the one since we forked :disappointed_relieved: ) and the extra branch foo that we wont be using anymore.
+
+So we go back to the main branch:
+
+```shell
+git checkout main
+``` 
+OR 
+```shell 
+git switch main
+```
+
+We can now delete all the extra branches that are not main with the alias command: (Thx Ed!, set in .zshsrc)
 
 ```shell
 prune
 ```
 
-this command was made with:
+this alias command was made with the piped commands:
 
 ```shell
 git branch | grep -v "main" | xargs git branch -D
 ``` 
 
-we then update our machine loaclly with the following command:
+##U Updating Local Machine
+
+With only our old main in the local machine and all the work merged in the main on the web we follow to updating the local main with the one on the web:
 
 ```shell
 git pull
 ```
   
-And we are done! Both the web and the machine locally are synched and updated with the most fresh main project ;)
+And we are done! Both the web and the machine locally are synched right after running the command one would usually want to pull before any work is done to always start with the most recent reviewd version. :space_invader:
 
