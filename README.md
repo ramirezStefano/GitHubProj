@@ -92,7 +92,7 @@ this alias command was made with the piped commands:
 git branch | grep -v "main" | xargs git branch -D
 ``` 
 
-## U Updating Local Machine
+## Updating Local Machine
 
 With only our old main in the local machine and all the work merged in the main on the web we follow to updating the local main with the one on the web:
 
