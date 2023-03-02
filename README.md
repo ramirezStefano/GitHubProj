@@ -1,12 +1,12 @@
-## Aim:
-This is a simple guide to Github use and some commands and the expected standards to use for upcoming projects.
+## Aim
+This is a simple guide to GitHub use, some commands and the expected standards to use for upcoming projects.
 
-## Workflow:
+## Workflow
 From an existing project e.g. (https://github.com/ramirezStefano/GitHubProj) , we can fork from the browser GUI to the default User dierctory e.g. ../ramirezstefano dir. OR a directory can be specified e.g. ../foo/bar/foo
 
 Once the project has been forked it can be worked locally without touching the Main in the web (github). We want to create a branch for the work updates.
 
-## New Branch:
+## New Branch
 We continue to create a Branch with the appropiate name on what we are working, e.g. exNUpdate, Function module foo, work on file x...
 This is done with the following command
 
